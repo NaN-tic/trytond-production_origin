@@ -5,15 +5,15 @@
     <data>
         <record model="ir.ui.view" id="production_view_form">
             <field name="model">production</field>
+            <field name="type" eval="None"/>
             <field name="inherit" ref="production.production_view_form"/>
-            <field name="type">form</field>
             <field name="name">production_form</field>
         </record>
 
         <record model="ir.ui.view" id="production_view_list">
             <field name="model">production</field>
+            <field name="type" eval="None"/>
             <field name="inherit" ref="production.production_view_list"/>
-            <field name="type">tree</field>
             <field name="name">production_list</field>
         </record>
     </data>
