@@ -6,10 +6,10 @@ from trytond.pool import Pool, PoolMeta
 from trytond.pyson import Eval
 
 __all__ = ['Production']
-__metaclass__ = PoolMeta
 
 
 class Production:
+    __metaclass__ = PoolMeta
     __name__ = 'production'
 
     origin = fields.Reference('Origin', selection='get_origin',
