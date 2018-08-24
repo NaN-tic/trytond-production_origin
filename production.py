@@ -8,8 +8,7 @@ from trytond.pyson import Eval
 __all__ = ['Production']
 
 
-class Production:
-    __metaclass__ = PoolMeta
+class Production(metaclass=PoolMeta):
     __name__ = 'production'
 
     origin = fields.Reference('Origin', selection='get_origin',
